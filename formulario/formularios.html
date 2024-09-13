@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 2px solid skyblue;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form>
+        <table border="1" cellspacing="0">
+            <tr>
+                <td><label for="nombres">Nombres:</label></td>
+                <td><input type="text" id="nombres" name="nombres" maxlength="5"></td>
+            </tr>
+            <tr>
+                <td><label for="edad">Edad:</label></td>
+                <td><input type="number" id="edad" name="edad"></td>
+            </tr>
+            <tr>
+                <td><label for="contraseña">Contraseña:</label></td>
+                <td><input type="password" id="contraseña" name="contraseña"></td>
+            </tr>
+            <tr>
+                <td><label for="fecha">Fecha:</label></td>
+                <td><input type="date" id="fecha" name="fecha"></td>
+            </tr>
+            <tr>
+                <td><label for="correo">Correo:</label></td>
+                <td><input type="email" id="correo" name="correo"></td>
+            </tr>
+            <tr>
+                <td><label for="solo-lectura">Solo lectura:</label></td>
+                <td><input type="text" id="solo-lectura" name="solo-lectura" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="hiddentextarea">Oculto:</label></td>
+                <td><input type="hidden" name="hiddentextarea" value=""></td>
+            </tr>
+            <tr>
+                <td><label for="mytextarea">Textarea:</label></td>
+                <td><textarea name="mytextarea" rows="5" cols="50" maxlength="250"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="color">Lista de Colores:</label></td>
+                <td>
+                    <select id="color" name="color" required>
+                        <option value="amarillo">Amarillo</option>            
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Radio:</label></td>
+                <td>
+                    <input type="radio" name="language" id="html" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" name="language" id="css" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="radio" name="language" id="javascript" value="JAVASCRIPT">
+                    <label for="javascript">JAVASCRIPT</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Check:</label></td>
+                <td>
+                    <input type="checkbox" id="html-check" name="language-check" value="html">
+                    <label for="html-check">HTML</label><br>
+                    <input type="checkbox" id="css-check" name="language-check" value="css">
+                    <label for="css-check">CSS</label><br>
+                    <input type="checkbox" id="javascript-check" name="language-check" value="javascript">
+                    <label for="javascript-check">JAVASCRIPT</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fileInput">Subir Archivo:</label></td>
+                <td><input type="file" id="fileInput" name="fileInput"></td>
+            </tr>
+            <tr>
+                <td><label for="colorInput">Color:</label></td>
+                <td><input type="color" id="colorInput" name="colorInput" value="#ff0000"></td>
+            </tr>
+            <tr>
+                <td><label for="placeholderInput">Placeholder:</label></td>
+                <td><input type="number" id="placeholderInput" name="placeholderInput" placeholder="Ingrese solo numeros"></td>
+            </tr>
+            <tr>
+                <td><label for="maxLengthInput">Maxlenght:</label></td>
+                <td><input type="text" id="maxLengthInput" name="maxLengthInput" maxlength="5" pattern="\d{5}"></td>
+            </tr>
+            <tr>
+                <td><label for="maxInput">Max:</label></td>
+                <td><input type="number" id="maxInput" name="maxInput" min="0" max="5"></td>
+            </tr>
+            <tr>
+                <td><label for="resetButton">Resetear:</label></td>
+                <td><input type="reset" id="resetButton" value="Restablecer"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
